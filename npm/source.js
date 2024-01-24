@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using UglifyJS v3.1.10.
+ * Original file: /npm/source@0.0.3/index.js
+ * 
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+var fs=require("fs"),path=require("path"),find=require("findit");exports.modules=function(e){var r=path.dirname(require.resolve(e+"/package.json")),i=JSON.parse(fs.readFileSync(r+"/package.json","utf8")),a=require.resolve(e),n={};if(n[e]=fs.readFileSync(a),n[e+"/package.json"]=i,i.directories&&i.directories.lib){var t=path.resolve(r,i.directories.lib);find.sync(t).filter(function(e){return e.match(/\.js$/)&&path.resolve(t,e)!==a&&!path.basename(e).match(/^\./)}).forEach(function(r){var i=fs.readFileSync(r),a=r.slice(t.length).replace(/\.js$/,"");n[e+"/lib"+a]=i})}else path.existsSync(r+"/lib")&&find.sync(r+"/lib").filter(function(e){return e.match(/\.js$/)&&path.resolve(r+"/lib",e)!==a&&!path.basename(e).match(/^\./)}).forEach(function(i){var a=fs.readFileSync(i),t=i.slice((r+"/lib").length).replace(/\.js$/,"");n[e+"/lib"+t]=a});var s=[i.bin,i.directories&&i.directories.bin].map(function(e){return e&&r+"/"+e}).filter(function(e){return path.existsSync(e)});return fs.readdirSync(r).filter(function(e){return e.match(/\.js$/)&&!path.basename(e).match(/^\./)&&s.indexOf(r+"/"+e)<0&&r+"/"+e!==a}).forEach(function(i){var a=e+"/"+i.replace(/\.js$/,"");n[a]=fs.readFileSync(r+"/"+i)}),n};
+//# sourceMappingURL=/sm/4693b7d0d0b1f824c7563e7a0e8b14f70bc57b6d1c49735d5ca3278d9f927725.map
