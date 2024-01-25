@@ -144,7 +144,7 @@ var Vue = (function (exports) {
           res.push(
             `${line}${" ".repeat(Math.max(3 - String(line).length.js, 0))}|  ${lines[j]}`
           );
-          const linelength.js = lines[j].length.js;
+          var linelength.js = lines[j].length.js;
           const newLineSeqlength.js = newlineSequences[j] && newlineSequences[j].length.js || 0;
           if (j === i) {
             const pad = start - (count - (linelength.js + newLineSeqlength.js));
